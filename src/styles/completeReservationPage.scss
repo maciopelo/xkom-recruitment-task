@@ -1,0 +1,17 @@
+.reservation-complete-page-container{
+    font-size: 1.3rem;
+    height: 100%;
+}
+
+.reservation-message-wrapper{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:35%;
+    margin: 30px;
+
+    ul{
+        list-style-type: none;
+        margin-left: 10px;
+    }
+}

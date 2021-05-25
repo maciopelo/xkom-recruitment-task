@@ -1,0 +1,90 @@
+@import "./global.scss";
+
+.reservation-page-container{
+    display: flex;
+    height:100%;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align: center;
+}
+
+.hall-wrapper{
+    margin-top: 3%;
+}
+
+.ant-col{
+    margin:2px;
+    background-color: transparent;
+}
+
+.hall-single-seat {
+    border: 1px solid #000;
+}
+
+.reserved{
+    background-color: $reservedSeat;
+}
+
+
+
+
+.bottom-reservation-panel{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+    
+}
+
+.submit-reservation-btn{
+    width:200px;
+    background-color: #fff;
+    border: 1px solid #000;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 7px #404040;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.seat-describer-wrapper{
+    display: flex;
+    align-items:center;
+}
+
+.seat-describer{
+    height:40px;
+    width:40px;
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+
+.blinking{
+	animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+	0% {background-color: #474747;}
+    10%{background-color: #404040;}
+	20%{background-color: #333333;}
+	30%{background-color: #4d4d4d;}
+    40%{background-color: #666666;}
+    50%{background-color: #808080;}
+	60%{background-color:#999999;}
+    70%{background-color: #b3b3b3;}
+    80%{background-color:#cccccc;}
+	90%{background-color: #e6e6e6;}
+    100%{background-color: #fff;}
+}
+
+.available:hover{
+    cursor:pointer;
+    background-color: $seatHover;
+}
+
+.chosen{
+    background-color:$chosenSeatColor;
+}
